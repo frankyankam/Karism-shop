@@ -1,0 +1,32 @@
+ <section className="px-4 py-5 bg-light">
+        <h2 className="text-center fw-bold mb-4">Nos produits phares</h2>
+        <Carousel interval={3000} style={{ maxHeight: 500 }}>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_746,c_limit/b90e719b-68dc-4c0d-843b-479e0904e1cc/nike-just-do-it.png"
+              alt="YANKI. Just Do It"
+              style={{ objectFit: 'cover', height: '500px' }}
+            />
+            <Carousel.Caption>
+              <h3>YANKI STYLE</h3>
+              <p>LD-1000-Découvrez notre nouvelle collection fruspension.</p>
+              <Button href="https://www.nike.com/fr/nike-style-by" variant="primary">Acheter maintenant</Button>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_746,c_limit/feff0b7f-da93-4b45-897e-4a5605c86851/nike-just-do-it.jpg"
+              alt="Pack Prism Attire la lumière"
+              style={{ objectFit: 'cover', height: '500px' }}
+            />
+            <Carousel.Caption>
+              <h3>Attire la lumière</h3>
+              <p>Pack Prism - Brillez avec notre nouvelle collection de football.</p>
+              <Button href="https://www.nike.com/fr/w/football-chaussures-1gdj0zy7ok" variant="primary">Acheter maintenant</Button>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </section>

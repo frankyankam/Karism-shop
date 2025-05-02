@@ -1,0 +1,185 @@
+/* src/styles/HomePagecss.css */
+
+/* GLOBAL RESET */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f8f9fa;
+  color: #212529; /* Couleur du texte en mode clair */
+}
+
+.container1 {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  color: #212529; /* Texte en mode clair */
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: #222;
+  color: #f1f1f1;
+}
+
+/* CARD PRODUCT */
+.card-body {
+  height: auto;
+  padding: 0;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease-in-out;
+}
+
+/* HERO / CAROUSEL SECTION */
+.hero-fullscreen {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.carousel {
+  max-height: auto;
+  overflow: hidden;
+}
+
+.carousel img {
+  max-height: auto;
+  object-fit: cover;
+}
+
+/* ANIMATIONS AU SCROLL */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* DARK MODE SUPPORT */
+body.dark-mode {
+  background-color: #121212;
+  color: hwb(0 95% 5%); /* Texte clair pour le mode sombre */
+}
+
+body.dark-mode header {
+  background-color: #1f1f1f;
+  color: #f1f1f1; /* Texte clair pour le mode sombre */
+}
+
+body.dark-mode footer {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+}
+
+body.dark-mode .card {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+}
+
+body.dark-mode .card:hover {
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .card-body {
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .navbar-dark .navbar-nav .nav-link {
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar-dark .navbar-toggler-icon {
+  background-color: #f1f1f1;
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #bb86fc;
+  border-color: #bb86fc;
+}
+
+body.dark-mode .btn-primary:hover {
+  background-color: #3700b3;
+  border-color: #3700b3;
+}
+/* ➤ Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ➤ Hover effect sur les cartes produits */
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* ➤ Scroll snapping */
+.scrolling-wrapper {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-wrapper > .card {
+  scroll-snap-align: start;
+}
+
+/* Optionnel : animation douce pour la section */
+section {
+  transition: background-color 0.3s ease;
+}
+.btn-light {
+  background-color: white;
+  border: none;
+  color: black;
+  font-weight: 500;
+}
+

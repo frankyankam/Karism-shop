@@ -1,0 +1,26 @@
+/* src/ProductPage.css */
+:root {
+    /* --- Typographie (extraits) --- */
+    --podium-cds-typography-320-to-1919-title1: 500 2.5rem/1.2 'Helvetica Now Display Medium', Helvetica, Arial, sans-serif;
+    --podium-cds-typography-320-to-959-conversation2: 300 1.5rem/1.35 'Palatino LT Pro Light', Helvetica, Arial, sans-serif;
+    --podium-cds-typography-body1: 400 1rem/1.5 'Helvetica Now Text', Helvetica, Arial, sans-serif;
+  
+    /* --- Couleurs --- */
+    --podium-cds-color-primary: var(--podium-cds-color-black);
+    --podium-cds-color-secondary: var(--podium-cds-color-grey-500);
+    --podium-cds-color-accent: var(--podium-cds-color-orange-500);
+  
+    /* … collez ici les autres variables dont vous avez besoin … */
+  }
+  
+  /* reset de base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font: var(--podium-cds-typography-body1);
+    color: var(--podium-cds-color-primary);
+    background-color: var(--podium-cds-color-white);
+  }
+  

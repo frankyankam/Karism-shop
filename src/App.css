@@ -1,0 +1,88 @@
+#root {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.navbar {
+  width: 100%;  /* Force la navbar à occuper toute la largeur */
+}
+/* src/styles/HomePage.css */
+
+/* App.css ou styles.css */
+
+/* S'assure que le body, html, et #root prennent toute la hauteur de l'écran */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Assure que la section Hero prend toute la hauteur de l'écran */
+.hero-fullscreen {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Styles supplémentaires pour les sections et autres éléments */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+footer {
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Pour la section produits, avoir un petit espace entre les éléments */
+.card-body {
+  padding: 15px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px; /* hauteur uniforme pour les images */
+}
+
